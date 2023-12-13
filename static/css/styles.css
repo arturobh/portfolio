@@ -1,0 +1,240 @@
+
+.colors {
+    --p-color: #092635;
+    --s-color: #075FE3;
+}
+
+.p-color {
+    color: #092635;
+}
+
+.s-color {
+    color: #075FE3;
+}
+
+.white-color {
+    color: white;
+}
+
+.black-color {
+    color: black;
+}
+
+body {
+    background-color: #092635;
+    color: white;
+    font-family: m-plus-code;
+    font-weight: 200;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+/* header - navbar */
+
+#header {
+    top: 0px;
+    background-color: #1B1E23;
+    font-family: m-plus-code;
+    position: sticky;
+    font-size: 25px;
+    padding: 1% 10%;
+    height: 120px;
+}
+
+#header * {
+    animation: left 1s ease-out;
+}
+
+.navbar-brand {
+    display: flex;
+}
+
+.navbar-svg:hover {
+    fill: white;
+}
+
+.navbar-logo {
+    padding: 0;
+    transition: transform .3s, .3s;
+}
+
+.navbar-text {
+    padding: 0;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover{
+    transform: scale3d(1.5, 1.5, 1.5);
+    color: #07e324;
+}
+
+.navbar-logo:hover + .navbar-text {
+    transform: translateX(15px);
+}
+
+.nav-link{
+    transition: transform .3s, color .3s;
+}
+
+.nav-link:hover{
+    transform: scale3d(1.08, 1.08, 1.08);
+    color: white;
+}
+
+.nav-item {
+    padding: 0 8px;
+}
+
+.svg-container {
+    width: 25px; 
+    max-width: 400px; 
+    height: auto; 
+  }
+
+  .svg-container:hover svg path {
+    fill: white; /* Change the fill color on hover */
+  }
+
+  .linkedin:hover svg path {
+    fill: #0A66C2; /* Change the fill color on hover */
+  }
+
+
+  /* content */
+
+.anchor{
+    display: block;
+    height: 120px; 
+    margin-top: -120px; 
+    visibility: hidden;
+  }
+
+.section {
+    font-family: m-plus-code;
+    height: 90vh;
+    padding: 3% 10%;
+}
+
+/* about */
+
+.about {
+    display: flex;
+    flex-direction: row;
+}
+
+/* projects */
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-item {
+    margin: auto;
+}
+
+.project-item-caption {
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the color and transparency */
+    backdrop-filter: blur(5px); /* Adds blur effect to the background */
+    border-radius: 10px;
+    margin: 100% 0% 0% 0%;
+    padding: 2%;
+}
+
+.project-item-text {
+    
+    color: white;
+}
+
+.tech-stack {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tech-item{
+   margin: 0% 5%;
+   height: 55px;
+}
+
+.svg-tech-container {
+    width: 150px; 
+    max-width: 400px; 
+    height: auto; 
+  }
+
+
+/* contact */
+
+.contact {
+    margin: 0;
+}
+
+@keyframes left {
+    0% {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes right {
+    0% {
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
+.section * {
+    animation: left 1s ease-out;
+}
+
+
+section {
+    background-color: rgb(103, 23, 23);
+}
+
+@font-face {
+    font-family: m-plus-code;
+    src: url(../fonts/MPLUSCodeLatin-VariableFont_wdth\,wght.ttf);
+}
+
+:root {
+    --font-weight-200: 200;
+    --font-weight-400: 400;
+    --font-weight-600: 600;
+    --font-weight-800: 800;
+  }
+
+.m-plus-code {
+    font-family: m-plus-code;
+}
+
+.w-200 {
+    font-weight: var(--font-weight-200);
+}
+
+.w-400 {
+    font-weight: var(--font-weight-400);
+}
+
+.w-600 {
+    font-weight: var(--font-weight-600);
+}
+
+.w-800 {
+    font-weight: var(--font-weight-800);
+}
